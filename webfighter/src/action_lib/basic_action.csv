@@ -1,0 +1,4 @@
+type,start,end,min_x,min_y,max_x,max_y
+HIT,5,9,3,6,7,8
+HURT,0,9,-1,0,4,9
+HURT,5,9,3,6,5.5,8
