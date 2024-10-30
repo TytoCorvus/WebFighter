@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://b21g00ip2nra6"]
+
+[ext_resource type="Script" path="res://collision_manager.gd" id="1_06wj1"]
+
+[node name="BaseGame" type="Node2D"]
+
+[node name="GameMgr" type="Node2D" parent="."]
+
+[node name="CollisionManager" type="Node" parent="GameMgr"]
+script = ExtResource("1_06wj1")
