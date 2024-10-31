@@ -18,6 +18,11 @@ func step():
 	current_frame += 1
 	var msg = "Stepping to frame %s"
 	print(msg % current_frame)
+	
+func reverse(): 
+	current_frame = max(current_frame - 1, 0)
+	var msg = "Stepping to frame %s"
+	print(msg % current_frame)
 
 func get_interactable() -> Interactable:
 	var hit = hitboxes.filter(func(frame_box: FrameBox): return frame_box.is_active(current_frame))
