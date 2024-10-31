@@ -18,8 +18,8 @@ func load_file() -> Action:
 		var type = content[0]
 		var start_frame = int(content[1])
 		var end_frame = int(content[2])
-		var offset = Vector2(float(content[3]), float(content[4]))
-		var area = Vector2(float(content[5]), float(content[6]))
+		var offset = Vector2(float(content[3]), -float(content[4]))
+		var area = Vector2(float(content[5]), -float(content[6]))
 		var box = FrameBox.new(start_frame, end_frame, offset, area)
 		
 		if end_frame > max_end:
