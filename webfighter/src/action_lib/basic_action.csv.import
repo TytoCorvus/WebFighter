@@ -2,12 +2,14 @@
 
 importer="csv_translation"
 type="Translation"
-uid="uid://dmp7yaoh5d7sn"
-valid=false
+uid="uid://c4yjewtrbx5f2"
 
 [deps]
 
+files=["res://src/action_lib/basic_action.start.translation", "res://src/action_lib/basic_action.end.translation", "res://src/action_lib/basic_action.min.translation", "res://src/action_lib/basic_action.min.translation", "res://src/action_lib/basic_action.max.translation", "res://src/action_lib/basic_action.max.translation"]
+
 source_file="res://src/action_lib/basic_action.csv"
+dest_files=["res://src/action_lib/basic_action.start.translation", "res://src/action_lib/basic_action.end.translation", "res://src/action_lib/basic_action.min.translation", "res://src/action_lib/basic_action.min.translation", "res://src/action_lib/basic_action.max.translation", "res://src/action_lib/basic_action.max.translation"]
 
 [params]
 

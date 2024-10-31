@@ -1,7 +1,7 @@
 class_name ActionParser
 	
 func load_file() -> Action:
-	var file = FileAccess.open("basic_action.csv", FileAccess.READ)
+	var file = FileAccess.open("res://src/action_lib/basic_action.csv", FileAccess.READ)
 	
 	# This is the header line - we don't want it
 	file.get_csv_line()
@@ -11,7 +11,10 @@ func load_file() -> Action:
 	var max_end := 0
 	
 	while(!file.eof_reached()):
-		var content = file.get_csv_line()
+		var content = Array(file.get_csv_line())
+		#obnoxious that it doesn't seem to handle the ACTUAL EOF well or blank lines
+		if content.is_empty() || content[0] == "":
+			break
 		var type = content[0]
 		var start_frame = int(content[1])
 		var end_frame = int(content[2])
@@ -31,4 +34,8 @@ func load_file() -> Action:
 				print("Received a type we could not parse into an action (%s)" % type)
 				pass
 				
-	return Action.new(max_end, hitboxes, hurtboxes)
+	var result = Action.new(max_end, hitboxes, hurtboxes)
+	print("%d hitboxes" % result.hitboxes.size())
+	print("%d hurtboxes" % result.hurtboxes.size())
+	
+	return result
