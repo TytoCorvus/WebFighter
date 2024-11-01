@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://tj8gmdvf26tp"]
+
+[ext_resource type="Script" path="res://src/scripts/base_entity.gd" id="1_nqxp1"]
+[ext_resource type="Script" path="res://src/scripts/box_visualizer.gd" id="2_yrptr"]
+
+[node name="InteractableEntity" type="Node2D"]
+scale = Vector2(10, 10)
+script = ExtResource("1_nqxp1")
+
+[node name="Visualizer" type="Node2D" parent="."]
+script = ExtResource("2_yrptr")

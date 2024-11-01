@@ -6,10 +6,10 @@ uid="uid://c4yjewtrbx5f2"
 
 [deps]
 
-files=["res://src/action_lib/basic_action.start.translation", "res://src/action_lib/basic_action.end.translation", "res://src/action_lib/basic_action.min.translation", "res://src/action_lib/basic_action.min.translation", "res://src/action_lib/basic_action.max.translation", "res://src/action_lib/basic_action.max.translation"]
+files=["res://src/action_lib/basic_action.start.translation", "res://src/action_lib/basic_action.end.translation", "res://src/action_lib/basic_action.min.translation", "res://src/action_lib/basic_action.min.translation", "res://src/action_lib/basic_action.width.translation", "res://src/action_lib/basic_action.height.translation"]
 
 source_file="res://src/action_lib/basic_action.csv"
-dest_files=["res://src/action_lib/basic_action.start.translation", "res://src/action_lib/basic_action.end.translation", "res://src/action_lib/basic_action.min.translation", "res://src/action_lib/basic_action.min.translation", "res://src/action_lib/basic_action.max.translation", "res://src/action_lib/basic_action.max.translation"]
+dest_files=["res://src/action_lib/basic_action.start.translation", "res://src/action_lib/basic_action.end.translation", "res://src/action_lib/basic_action.min.translation", "res://src/action_lib/basic_action.min.translation", "res://src/action_lib/basic_action.width.translation", "res://src/action_lib/basic_action.height.translation"]
 
 [params]
 
