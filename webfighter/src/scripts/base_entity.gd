@@ -30,7 +30,7 @@ func _process(delta: float) -> void:
 
 func render():
 	var interactable = test_action.get_interactable()
-	interactable.position_offset = Vector2(256,256)
+	interactable.position_offset = position
 	$Visualizer.set_interactable(interactable, test_action.current_frame)
 	$Visualizer.queue_redraw()
 
