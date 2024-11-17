@@ -15,8 +15,8 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	
-	pass
+	if Input.is_action_just_pressed("eval_intersection"):
+		detect_intersection()
 
 func create_test_entity():
 	var new_instance = load("res://src/scenes/interactable_entity.tscn").instantiate()

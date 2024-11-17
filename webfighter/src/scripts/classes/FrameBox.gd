@@ -15,6 +15,9 @@ func _init(_startFrame: int, _endFrame: int, _offset: Vector2, _area: Vector2):
 	area = _area
 	pass
 
+static func from(other: FrameBox) -> FrameBox:
+	return FrameBox.new(other.startFrame, other.endFrame, Vector2(other.offset), Vector2(other.area))
+
 func is_active(frame: int) -> bool:
 	return frame >= startFrame && frame <= endFrame
 

@@ -16,7 +16,8 @@ func _process(delta: float) -> void:
 func _draw() -> void:
 	if interactable != null:
 		for box in interactable.hitboxes:
-			draw_rect(Rect2(box.offset, box.area), Color(Color.DARK_RED, 0.6))
+			draw_rect(Rect2(), Color(Color.DARK_RED, 0.6))
+			# draw_rect(Rect2(box.offset, box.area), Color(Color.DARK_RED, 0.6))
 		for box in interactable.hurtboxes:
 			draw_rect(Rect2(box.offset, box.area), Color(Color.LIGHT_GREEN, 0.6))
 			

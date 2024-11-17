@@ -19,4 +19,4 @@ func clash() -> bool:
 	return _clash
 
 func _to_string() -> String:
-	return "a->b: %b - b->a: %b - clash: %b" % [_a_intersects_b, _b_intersects_a, _clash]
+	return "a->b: %s - b->a: %s - clash: %s" % [_a_intersects_b, _b_intersects_a, _clash]

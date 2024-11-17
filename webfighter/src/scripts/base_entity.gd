@@ -29,10 +29,11 @@ func _process(delta: float) -> void:
 		render()
 
 func render():
-	var interactable = test_action.get_interactable()
+	var interactable = test_action.get_interactable(scale.x < 0)
 	interactable.position_offset = position
 	$Visualizer.set_interactable(interactable, test_action.current_frame)
 	$Visualizer.queue_redraw()
+	current_interactable = interactable
 
 func get_interactable() -> Interactable:
 	return current_interactable
