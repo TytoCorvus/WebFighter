@@ -8,8 +8,8 @@ var p2: BaseEntity
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	root = get_tree().get_root()
-	p1 = BaseEntity.create_new(Vector2(-60,0), 1, "Player 1")
-	p2 = BaseEntity.create_new(Vector2(60,0), -1, "Player 2")
+	p1 = BaseEntity.create_new(Vector2(-5,0), 1, "Player 1")
+	p2 = BaseEntity.create_new(Vector2(5,0), -1, "Player 2")
 	add_child(p1)
 	add_child(p2)
 
